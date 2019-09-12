@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head -->
+    <title>WANDERLUST</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/travelBlog.css" rel="stylesheet">
+    <link href="css/colorbox.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#wanderlust-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">WANDERLUST</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="wanderlust-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="hawaii.html">HI</a></li>
+                    <li><a href="newyork.html">NYC</a></li>
+                    <li><a href="lasvegas.html">NV</a></li>
+                    <li class="active"><a href="gallery.html">GAL</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>GALLERY</h1>
+                <hr>
+            </div>
+        </div>
+
+        <div class="photoset-grid-lightbox" data-layout="2122">
+
+            <a class="group1" href="img/timessquare.JPG">
+                <img src="img/timessquare.JPG" alt="timessqaurepicture">
+            </a>
+            <a class="group1" href="img/empirestate.jpg">
+                <img src="img/empirestate.jpg" alt="empirestatepicture">
+            </a>
+            <a class="group1" href="img/taxi.jpg">
+                <img src="img/taxi.jpg" alt="taxipicture">
+            </a>
+
+            <a class="group1" href="img/paris.JPG">
+                <img src="img/paris.JPG" alt="parispicture">
+            </a>
+            <a class="group1" href="img/buffet.jpg">
+                <img src="img/buffet.jpg" alt="buffetpicture">
+            </a>
+
+            <a class="group1" href="img/flowers.jpg">
+                <img src="img/flowers.jpg" alt="flowerpicture">
+
+            </a>
+            <a class="group1" href="img/acaibowl.jpg">
+                <img src="img/acaibowl.jpg" alt="acaipicture">
+            </a>
+            <hr>
+
+        </div>
+    </div>
+
+
+
+    <!-- jQuery and bootstrap plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.photoset-grid.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+
+    <script>
+        $('.photoset-grid-lightbox').photosetGrid({
+            highresLinks: false,
+            rel: 'travelblog-gallery',
+            borderActive: true,
+            borderWidth: '3px',
+            borderColor: '#fff',
+            borderRadius: '3px',
+            borderRemoveDouble: false,
+
+
+
+            onComplete: function () {
+                $(".group1").colorbox({
+                    rel: 'group1',
+                    width: "50%",
+                    height: "50%",
+                    transition: "fade"
+                });
+                //                    $('.photoset-grid-lightbox').attr('style', '');
+                //                    $('.photoset-grid-lightbox a').colorbox({
+                //
+                //                        maxWidth: '30%',
+                //                        scalePhotos: true
+                //
+                //                    });
+            }
+        });
+    </script>
+</body>
+
+</html>

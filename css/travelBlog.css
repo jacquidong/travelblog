@@ -1,0 +1,112 @@
+    @import 'https://fonts.googleapis.com/css?family=Oswald';
+    @import 'https://fonts.googleapis.com/css?family=Domine';
+    @import 'https://fonts.googleapis.com/css?family=Raleway';
+    html {
+        background-color: #fcfbfb;
+    }
+    
+    .jumbotron {
+        background-image: url(../img/home1.jpg);
+        background-size: cover;
+        min-height: 400px;
+        text-align: center;
+        padding-top: 150px;
+    }
+    
+    h1 {
+        font-size: 5em;
+        text-align: center;
+        font-family: 'Oswald';
+    }
+    
+    body {
+        font-family: 'Domine', serif;
+        margin-top: 50px;
+        text-align: center;
+        background-color: #fcfbfb;
+    }
+    
+    .panel-heading {
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    li,
+    h2,
+    h3 {
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .navbar-brand {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .width44 {
+        width: 44%;
+        float: left;
+        padding-right: 18px;
+    }
+    
+    .width33 {
+        width: 33%;
+    }
+    
+    p {
+        text-align: justify;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+    }
+    
+    .width334 {
+        float: right;
+        width: 33%;
+    }
+    
+    .col-md-4 {
+        float: left;
+        padding-top: 20px;
+    }
+    
+    .col-md-8 {
+        float: right;
+    }
+    
+    .widthwynn {
+        width: 49.8%;
+    }
+    
+    .hotel {
+        padding-bottom: 50px;
+    }
+    
+    .col-md-5 {
+        float: right;
+        padding-bottom: 30px;
+        padding-right: 0px;
+    }
+    
+    .img-responsive {
+        border: none;
+    }
+    
+    .photo1 {
+        padding-bottom: 15px;
+    }
+    
+    .hawaiipicture {
+        padding-bottom: 10px;
+    }
+    
+    .col-md-7 {
+        padding-left: 0px;
+    }
+    
+    .group1 img {
+        margin-top: 0px;
+    }
